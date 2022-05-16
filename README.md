@@ -52,7 +52,7 @@ Prompts the user to perform quality control, and asks if they'd like to downscal
 
         $ brew install imagemagick
 
-2. This script ships assuming the following folder structure. You are welcome to modify this for your needs within the /trim_deskew.sh script.
+2. This script ships assuming the following folder structure. You are welcome to modify this for your needs within the /autocrop.sh script.
 
         ├── Desktop
         │   ├── crop
@@ -68,7 +68,7 @@ Prompts the user to perform quality control, and asks if they'd like to downscal
 I developed this script while working at Letterform Archive in San Francisco. It is an extension of [autocrop](https://github.com/elliswmartin/autocrop), developed at Oakland Museum of California in collaboration with two colleagues to batch edit photonegatives. 
 
 ## Imaging Setup
-Primarily books and flat works ranging from antiquarian books to posters to type specimens imaged on Phase One (__) camera mounted to a Bear Images copystand and tethered to Capture One 12. 
+Primarily books and flat works ranging from antiquarian books to posters to type specimens imaged on Phase One XF IQ3 100MP camera mounted to a Bear Images Octavo copystand and tethered to Capture One 12. 
 
 ## Image Properties
 The jpg files processed by this script are in the following state prior to processing: the background of the image plus the color rendition chart and ruler are masked, creating a white background. 
