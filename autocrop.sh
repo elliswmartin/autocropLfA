@@ -19,8 +19,8 @@ echo 🪨🔨 now on to cropping! hold please 👽
 
 cd ~/Desktop/processed
 
-# trim and deskew images using ImageMagick
-mogrify -background white -fuzz 3% -trim +repage *.jpg
+# trim images using ImageMagick
+mogrify -background white -fuzz 20% -trim +repage *.jpg
 
 echo 🌻 cropping complete! 
 
