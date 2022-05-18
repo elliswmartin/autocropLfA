@@ -2,7 +2,7 @@
 Another short bash script that helps with batch editing image files. Written for Mac. 
 
 ## How It Works
-This script uses ImageMagick mogrify program to crop a file and overwrite it. Since the masked background can be visually distinguished from the object, this became the way to custom crop each negative based on color difference rather than size.
+This script uses ImageMagick mogrify program to crop a file and overwrite it. Since the masked background can be visually distinguished from the object, this became the way to custom crop each image based on color difference rather than size.
 
     $ mogrify -background white -fuzz 3% -trim +repage *.jpg
 
@@ -22,7 +22,7 @@ Various aspects of the code will be highlighted below.
 
 Additional mogrify arguments to consider: 
 
-`-deskew ??%:` Deskews the image.
+`-deskew 10%:` Deskews the image.
 
 `-type TrueColor:` Forces image to be saved as a full color RGB.
 
@@ -68,7 +68,7 @@ Prompts the user to perform quality control, and asks if they'd like to downscal
 I developed this script while working at Letterform Archive in San Francisco. It is an extension of [autocrop](https://github.com/elliswmartin/autocrop), developed at Oakland Museum of California in collaboration with two colleagues to batch edit photonegatives. 
 
 ## Imaging Setup
-Primarily books and flat works ranging from antiquarian books to posters to type specimens imaged on Phase One XF IQ3 100MP camera mounted to a Bear Images Octavo copystand and tethered to Capture One 12. 
+Primarily books and flat works ranging from antiquarian books to posters to type specimens imaged on Phase One XF IQ3 100MP camera mounted to a Bear Images Octavo copystand and tethered to Capture One 12 on iMac. 
 
 ## Image Properties
 The jpg files processed by this script are in the following state prior to processing: the background of the image plus the color rendition chart and ruler are masked, creating a white background. 
