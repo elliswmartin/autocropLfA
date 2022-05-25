@@ -56,11 +56,12 @@ Prompts the user to perform quality control, and asks if they'd like to downscal
 
         ├── Desktop
         │   ├── crop
+        │   ├── qc        
         │   ├── processed
  
-3. Add your images to be processed into the "/Desktop/crop" folder. If you do not have a processed folder, one will be created automatically during processing. 
+3. Add your images to be processed into the "/Desktop/crop" folder. If you do not have a qc folder, one will be created automatically during processing. 
 
-4. Open Terminal and run the script. Images will appear in the "/Desktop/Processed" folder.
+4. Open Terminal and run the script. Images will appear in the "~/Desktop/qc" folder.
 
         $ sh path/to/autocrop/folder/autocrop.sh
 
