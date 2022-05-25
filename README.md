@@ -8,7 +8,7 @@ This script uses ImageMagick mogrify program to crop a file and overwrite it. Si
 
 Various aspects of the code will be highlighted below.
 
-`-background white:` Sets the background color to white.
+`-bordercolor white:` Sets the border color to be trimmed to white.
 
 `-fuzz 3%:` Adjusts what is considered white based on a percentage.
 
