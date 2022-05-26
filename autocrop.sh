@@ -23,12 +23,14 @@ cd ~/Desktop/qc
 mogrify -bordercolor white -fuzz 3% -trim +repage *.jpg
 
 echo 🌻 cropping complete! 
+cd ~/Desktop/
 
 # optional downsize to designated pixel amount: 
 read -p "❗pausing for QC, would you like to resize to 3000px?" -n 1 -r
 echo    # (optional) move to a new line
 if [[ ! $REPLY =~ ^[Nn]$ ]]
 then
+    mkdir -p "processed" && cp -R ~/Desktop/qc/*.jpg ~/Desktop/processed/
     cd ~/Desktop/processed
     echo 🪚🪵 now on to downsizing, hold please 🛸
     mogrify -resize 3000x3000\> *.jpg 
@@ -36,7 +38,6 @@ then
 fi
 
 # copy files from source to destination, make processed folder if it doesn't exist
-mkdir -p "processed" && cp -R ~/Desktop/qc/*.jpg ~/Desktop/processed/
 
 echo 🍦 all edits complete!  
 
