@@ -75,7 +75,7 @@ Prompts the user to perform quality control, and asks if they'd like to downscal
     * If you would like to resize images, respond "y" to the prompt.
     * If you do not wish to resize or QC will be performed asychronously, respond "n" to the prompt. 
     
-7. To resize images after the autocrop script has been exited, run the resize script. 
+(optional) To resize images after the autocrop script has been exited, run the resize script. 
         
         $ sh path/to/autocrop/folder/resize.sh 
 
