@@ -60,10 +60,9 @@ Prompts the user to perform quality control, and asks if they'd like to downscal
         │   ├── processed
  
 3. Add your images to be processed into the "/Desktop/crop" folder. If you do not have a qc folder, one will be created automatically during processing. 
+    1. (optional) If you want to add tiffs that need to be converted to jpgs, run the makeJpgs script. 
 
-3a. (optional) If you want to add tiffs that need to be converted to jpgs, run the makeJpgs script. 
-
-        $ sh path/to/autocrop/folder/makeJpgs.sh
+            $ sh path/to/autocrop/folder/makeJpgs.sh
 
 4. Open Terminal and run the autocrop script. Images will appear in the "~/Desktop/qc" folder.
 
