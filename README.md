@@ -68,14 +68,14 @@ Prompts the user to perform quality control, and asks if they'd like to downscal
 
         $ sh path/to/autocrop/folder/autocrop.sh
 
-5. Perform quality control when the script pauses and prompts for QC. 
+5. Perform quality control when the script pauses and prompts for QC, checking to make sure each images has been adequately cropped. 
     1. Manually crop any images not fully cropped. 
 
-6. After QC is complete:
-    * Return to the terminal window and key "y" if you would like to resize images after QC is complete.
-    * Key "n" you do not wish to resize or QC will be performed asychronously to the initial script. 
+6. After QC is completed:
+    * If you would like to resize images, respond "y" to the prompt.
+    * If you do not wish to resize or QC will be performed asychronously, respond "n" to the prompt. 
     
-7. To resize images (3000px) after the autocrop script has been exited, run the resize script. 
+7. To resize images after the autocrop script has been exited, run the resize script. 
         
         $ sh path/to/autocrop/folder/resize.sh 
 
