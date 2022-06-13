@@ -85,5 +85,5 @@ I developed this script while working at Letterform Archive in San Francisco. It
 ## Imaging Setup
 Primarily books and flat works ranging from antiquarian books to posters to type specimens imaged on Phase One XF IQ3 100MP camera mounted to a Bear Images Octavo copystand and tethered to Capture One 12 on iMac. 
 
-## Image Properties (makeJpgs.sh)
+## Image Properties
 Images are in the following state prior to processing with the autocrop script: the background of the image plus the color rendition chart and ruler are masked, on a white background, and flattened. 
