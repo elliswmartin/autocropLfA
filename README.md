@@ -4,7 +4,7 @@ Another short bash script that helps with batch editing image files. Written for
 ## How It Works
 This script uses ImageMagick mogrify program to crop a jpg file and overwrite it. Since the masked background can be visually distinguished from the object, this became the way to custom crop each image based on color difference rather than size.
 
-    $ mogrify -background white -fuzz 3% -trim +repage *.jpg
+    $ mogrify -bordercolor white -fuzz 3% -trim +repage *.jpg
 
 Various aspects of the code will be highlighted below.
 
