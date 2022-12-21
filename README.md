@@ -4,7 +4,7 @@ Another short bash script that helps with batch editing image files. Written for
 ## How It Works
 This script uses ImageMagick mogrify program to crop a jpg file and overwrite it. Since the masked background can be visually distinguished from the object, this became the way to custom crop each image based on color difference rather than size.
 
-    $ mogrify -background white -fuzz 3% -trim +repage *.jpg
+    $ mogrify -bordercolor white -fuzz 3% -trim +repage *.jpg
 
 Various aspects of the code will be highlighted below.
 
@@ -75,8 +75,7 @@ Prompts the user to perform quality control, and asks if they'd like to downscal
     * If you would like to resize images, respond "y" to the prompt.
     * If you do not wish to resize or QC will be performed asychronously, respond "n" to the prompt. 
     
-
-To resize images after the autocrop script has been exited, run the resize script. 
+7. (optional) To scale images after the autocrop script has been exited, run the resize script. 
         
         $ sh path/to/autocrop/folder/resize.sh 
 
@@ -86,5 +85,5 @@ I developed this script while working at Letterform Archive in San Francisco. It
 ## Imaging Setup
 Primarily books and flat works ranging from antiquarian books to posters to type specimens imaged on Phase One XF IQ3 100MP camera mounted to a Bear Images Octavo copystand and tethered to Capture One 12 on iMac. 
 
-## Image Properties (makeJpgs.sh)
+## Image Properties
 Images are in the following state prior to processing with the autocrop script: the background of the image plus the color rendition chart and ruler are masked, on a white background, and flattened. 
