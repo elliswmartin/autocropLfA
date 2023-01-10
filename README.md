@@ -60,7 +60,7 @@ Prompts the user to perform quality control, and asks if they'd like to downscal
         │   ├── processed
  
 3. Add your images to be processed into the "/Desktop/crop" folder. If you do not have a qc folder, one will be created automatically during processing. 
-    1. (optional) If you want to add tiffs that need to be converted to jpgs, run the makeJpgs script. 
+    1. (optional) If you want to add tiffs that need to be converted to jpgs, run the [makeJpg](https://github.com/elliswmartin/shhelpersLfA/blob/76ee28a9f0195583c54e156cb7b36912f5df4c7e/makeJpg.sh) script. 
 
             $ sh path/to/autocrop/folder/makeJpgs.sh
 
@@ -75,7 +75,7 @@ Prompts the user to perform quality control, and asks if they'd like to downscal
     * If you would like to resize images, respond "y" to the prompt.
     * If you do not wish to resize or QC will be performed asychronously, respond "n" to the prompt. 
     
-7. (optional) To scale images after the autocrop script has been exited, run the resize script. 
+7. (optional) To scale images after the autocrop script has been exited and create mids, run the [resize](https://github.com/elliswmartin/shhelpersLfA/blob/76ee28a9f0195583c54e156cb7b36912f5df4c7e/resize.sh) script. 
         
         $ sh path/to/autocrop/folder/resize.sh 
 
