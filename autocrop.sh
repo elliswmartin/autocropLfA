@@ -15,7 +15,7 @@ cd ~/Desktop/
 mkdir -p "qc" && cp -R ~/Desktop/crop/*.jpg ~/Desktop/qc/
 
 echo 📁 files copied and moved to destination folder. 
-echo 🪨🔨 now on to cropping! hold please 👽 
+echo 🪨🔨 now on to cropping! hold please ☺ 
 
 cd ~/Desktop/qc
 
